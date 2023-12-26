@@ -1,0 +1,203 @@
+@import url(https://fonts.googleapis.com/css?family=Bad+Script:regular);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Bad Script", cursive;
+}
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #20223A;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header {
+    background: rgb(65,62,105);
+    color: #ffcc0c;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffcc0c;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+main {
+    max-width: 50%; /* Use a percentage for flexibility */
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+}
+
+.slide {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: rgb(65,62,105);
+    color: #ffcc0c;
+    padding: 10px;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #eee;
+}
+
+.slideshow-container {
+    max-width: 70%;
+    margin: auto;
+    min-height: 200px; /* Adjust the value as needed */
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+}
+.rp-events{
+    display: flex;
+}
+.card-container{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+.card{
+    background: rgb(65,62,105);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.card img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+.card-content{
+    padding: 20px;
+}
+.card-content h2{
+    color:#ffcc0c;
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+.card-content p{
+    color: #ffcc0c;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+.card-content button{
+    background-color: #ffcc0c;
+    border: 1px solid #000;
+    color: #000;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+.card-content button:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width: 800px){
+    .card-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 600px){
+    .card-container{
+        grid-template-columns:1fr;
+    }
+}
+
+/* Media Query for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 5px;
+    }
+    nav a {
+        padding: 5px;
+    }
+    main {
+        padding: 10px;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    header {
+        padding: 5px;
+    }
+    nav a {
+        padding: 5px;
+    }
+    main {
+        padding: 10px;
+    }
+}
+/* Media Query for screens between 1025px and 1440px */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    header {
+        padding: 15px;
+    }
+    nav a {
+        padding: 15px;
+    }
+    main {
+        padding: 30px;
+    }
+}
+
+/* Media Query for screens larger than 1440px */
+@media only screen and (min-width: 1441px) {
+    header {
+        padding: 20px;
+    }
+    nav a {
+        padding: 20px;
+    }
+    main {
+        padding: 40px;
+    }
+    /* Add more styles for larger screens as needed */
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    header {
+        padding: 10px;
+    }
+    nav a {
+        padding: 10px;
+    }
+    main {
+        padding: 20px;
+    }
+}
